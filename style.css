@@ -85,7 +85,7 @@ section:hover{
 header{
     background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     color: #ffffff;
-    padding: 6-px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 .skills-grid{
@@ -145,7 +145,7 @@ header{
         font-size: 15px;
     }
     .header-btns{
-        flex-direction: coloumn;
+        flex-direction: column;
         align-items: center;
     }
     .header-btns a{
@@ -154,7 +154,7 @@ header{
     }
     nav{
         display: flex;
-        flex-direction: coloumn;
+        flex-direction: column;
         gap: 10px;
     }
     .skills-grid{
@@ -164,16 +164,54 @@ header{
         margin-top:10px;
         padding: 5px;
     }
-    .skills-tag{
+    .skill-tag{
         background: #f0f4ff;
         color: #1a1a2e;
         padding:8px 18px;
         font-size: 13px;
         border-radius: 20px;
         font-weight: 500;
-        border: 2px sloid #d0d8f0;
+        border: 2px solid #d0d8f0;
         transition: all 0.3s ease;
         white-space: nowrap;
         display: inline-block;
     }
+}
+#darkModeBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#darkModeBtn:hover{
+    background: #ffffff;
+    color: #1a1a2e;
+}
+/* Dark Mode*/
+body.dark-mode{
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+body.dark-mode section{
+    background-color: #1a1a1a;
+    color: #ffffff;
+
+}
+body.dark-mode section h2{
+    color: #ffffff;
+}
+body.dark-mode section p,
+body.dark-mode section li {
+    color: #cccccc;
+}
+
+body.dark-mode .skill-tag {
+    background: #2a2a2a;
+    color: #ffffff;
+    border-color: #444444;
 }

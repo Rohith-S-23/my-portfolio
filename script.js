@@ -17,6 +17,17 @@ function greetUser(name) {
 console.log(greetUser("Rohith"));
 console.log(greetUser("Visitor"));
 
+// Arrays & Loops
+const mySkills = ["HTML", "CSS", "JavaScript", "React", "Java"];
+
+for(let i = 0; i < mySkills.length; i++) {
+    console.log(i + " → " + mySkills[i]);
+}
+
+mySkills.forEach(function(skill) {
+    console.log("I know: " + skill);
+});
+
 // Main window onload
 window.onload = function() {
 
@@ -34,6 +45,20 @@ window.onload = function() {
     document.querySelector('footer p').textContent = 
         "© " + footerYear + " Rohith S. All rights reserved";
 
+    // Dynamically create skill badges
+    const skillsList = ["HTML5", "CSS3", "JavaScript", 
+                        "Responsive Design", "Git & GitHub", 
+                        "VS Code", "GitHub Pages"];
+
+    const container = document.getElementById('skillsContainer');
+
+    skillsList.forEach(function(skill) {
+        const badge = document.createElement('span');
+        badge.className = 'skill-tag';
+        badge.textContent = skill;
+        container.appendChild(badge);
+    });
+
     // Count skills
     const skillTags = document.querySelectorAll('.skill-tag');
     console.log("Total skills: " + skillTags.length);
@@ -49,4 +74,4 @@ window.onload = function() {
         }
     });
 
-}
+};

@@ -77,5 +77,16 @@ window.onload = function() {
         formMessage.style.color = 'green';
         contactForm.reset();
     });
+    // Fetch GitHub Profile - Async/Await
+const getGithubData = async () => {
+    const response = await fetch('https://api.github.com/users/Rohith-S-23');
+    const data = await response.json();
+    
+    document.getElementById('repoCount').textContent = data.public_repos;
+    document.getElementById('followerCount').textContent = data.followers;
+    document.getElementById('followingCount').textContent = data.following;
+};
+
+getGithubData();
 
 };

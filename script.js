@@ -25,9 +25,18 @@ window.onload = function() {
     document.querySelector('footer p').textContent = "© " + footerYear + " Rohith S. All rights reserved";
 
     // Dynamically create skill badges
-    const skillsList = ["HTML5", "CSS3", "JavaScript", 
-                        "Responsive Design", "Git & GitHub", 
-                        "VS Code", "GitHub Pages"];
+   const skillsList = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "Java",
+    "Python",
+    "Responsive Design",
+    "Git & GitHub",
+    "VS Code",
+    "GitHub Pages"
+];
 
     const container = document.getElementById('skillsContainer');
     skillsList.forEach(function(skill) {

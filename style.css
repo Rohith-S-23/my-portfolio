@@ -9,9 +9,10 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background: linear-gradient(135deg,
-        #1a0030,
-        #2d0050,
-        #1a0030);
+        #0a1a0d,
+        #1a2f1a,
+        #0d1a0f,
+        #0a0d0a);
     background-attachment: fixed;
     color: #ffffff;
     min-height: 100vh;
@@ -40,7 +41,7 @@ nav {
 .nav-logo {
     font-size: 20px;
     font-weight: 700;
-    color: #c084fc;
+    color: #4ade80;
     letter-spacing: 1px;
 }
 
@@ -58,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #c084fc;
+    color: #4ade80;
 }
 
 body.dark-mode nav {
@@ -71,6 +72,7 @@ header {
     min-height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-content {
@@ -81,6 +83,7 @@ header {
     margin: 0 auto;
     width: 100%;
     gap: 40px;
+    padding: 0 20px;
 }
 
 .header-left {
@@ -89,7 +92,7 @@ header {
 
 .header-greeting {
     font-size: 20px;
-    color: #c084fc;
+    color: #4ade80;
     margin-bottom: 5px;
     font-weight: 500;
 }
@@ -105,7 +108,7 @@ header {
 .header-role {
     font-size: 26px;
     font-weight: 600;
-    background: linear-gradient(135deg, #c084fc, #e879f9);
+    background: linear-gradient(135deg, #4ade80, #22c55e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -128,12 +131,12 @@ header {
 }
 
 .header-btns a:first-child {
-    background: linear-gradient(135deg, #c084fc, #e879f9);
-    color: #ffffff;
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    color: #0a1a0d;
     padding: 12px 28px;
     border-radius: 25px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -152,7 +155,7 @@ header {
 
 .header-btns a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(192, 132, 252, 0.4);
+    box-shadow: 0 5px 20px rgba(74, 222, 128, 0.4);
 }
 
 /* ===== DARK MODE BUTTON ===== */
@@ -182,18 +185,24 @@ header {
     height: 350px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #c084fc;
+    border: 4px solid #4ade80;
     box-shadow:
-        0 0 30px rgba(192, 132, 252, 0.5),
-        0 0 60px rgba(192, 132, 252, 0.3),
-        0 0 90px rgba(192, 132, 252, 0.1);
+        0 0 30px rgba(74, 222, 128, 0.5),
+        0 0 60px rgba(74, 222, 128, 0.3),
+        0 0 90px rgba(74, 222, 128, 0.1);
     animation: float 4s ease-in-out infinite;
+    position: relative;
+}
+
+.profile-circle::after {
+    display: none;
 }
 
 .profile-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: none;
 }
 
 /* ===== FLOAT ANIMATION ===== */
@@ -214,7 +223,7 @@ main {
 section {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(192, 132, 252, 0.2);
+    border: 1px solid rgba(74, 222, 128, 0.2);
     border-radius: 20px;
     padding: 35px;
     margin-bottom: 25px;
@@ -222,11 +231,11 @@ section {
 }
 
 section:hover {
-    border-color: #c084fc;
+    border-color: #4ade80;
     box-shadow:
-        0 0 20px rgba(192, 132, 252, 0.3),
-        0 0 40px rgba(192, 132, 252, 0.2),
-        0 0 80px rgba(192, 132, 252, 0.1);
+        0 0 20px rgba(74, 222, 128, 0.3),
+        0 0 40px rgba(74, 222, 128, 0.2),
+        0 0 80px rgba(74, 222, 128, 0.1);
     transform: translateY(-5px);
 }
 
@@ -245,7 +254,7 @@ body.dark-mode section:hover {
 
 section h2 {
     font-size: 24px;
-    color: #c084fc;
+    color: #4ade80;
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -276,8 +285,8 @@ section ul li {
 }
 
 .stat-item {
-    background: rgba(192, 132, 252, 0.1);
-    border: 1px solid rgba(192, 132, 252, 0.3);
+    background: rgba(74, 222, 128, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.3);
     border-radius: 12px;
     padding: 15px 30px;
     text-align: center;
@@ -285,13 +294,13 @@ section ul li {
 }
 
 .stat-item:hover {
-    background: rgba(192, 132, 252, 0.2);
+    background: rgba(74, 222, 128, 0.2);
     transform: translateY(-3px);
 }
 
 .stat-item h3 {
     font-size: 30px;
-    color: #c084fc;
+    color: #4ade80;
     margin-bottom: 5px;
     font-weight: 700;
 }
@@ -320,22 +329,22 @@ body.dark-mode .stat-item h3 {
 }
 
 .skill-tag {
-    background: rgba(192, 132, 252, 0.1);
-    color: #c084fc;
+    background: rgba(74, 222, 128, 0.1);
+    color: #4ade80;
     padding: 8px 18px;
     border-radius: 20px;
     font-size: 13px;
     font-weight: 500;
-    border: 1px solid rgba(192, 132, 252, 0.3);
+    border: 1px solid rgba(74, 222, 128, 0.3);
     transition: all 0.3s ease;
     white-space: nowrap;
 }
 
 .skill-tag:hover {
-    background: linear-gradient(135deg, #c084fc, #e879f9);
-    color: #ffffff;
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    color: #0a1a0d;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(192, 132, 252, 0.4);
+    box-shadow: 0 5px 15px rgba(74, 222, 128, 0.4);
 }
 
 body.dark-mode .skill-tag {
@@ -360,7 +369,7 @@ body.dark-mode .skill-tag:hover {
 #contactForm input,
 #contactForm textarea {
     background: rgba(255,255,255,0.05);
-    border: 1.5px solid rgba(192, 132, 252, 0.3);
+    border: 1.5px solid rgba(74, 222, 128, 0.3);
     color: #ffffff;
     border-radius: 10px;
     padding: 12px 16px;
@@ -378,12 +387,12 @@ body.dark-mode .skill-tag:hover {
 
 #contactForm input:focus,
 #contactForm textarea:focus {
-    border-color: #c084fc;
+    border-color: #4ade80;
 }
 
 #contactForm button {
-    background: linear-gradient(135deg, #c084fc, #e879f9);
-    color: #ffffff;
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    color: #0a1a0d;
     border: none;
     padding: 14px;
     border-radius: 10px;
@@ -397,7 +406,7 @@ body.dark-mode .skill-tag:hover {
 
 #contactForm button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(192, 132, 252, 0.5);
+    box-shadow: 0 5px 20px rgba(74, 222, 128, 0.5);
 }
 
 body.dark-mode #contactForm input,
@@ -413,6 +422,7 @@ body.dark-mode #contactForm textarea:focus {
 
 body.dark-mode #contactForm button {
     background: #e94560;
+    color: #ffffff;
 }
 
 #formMessage {
@@ -459,22 +469,4 @@ body.dark-mode footer {
     main { padding: 0 20px; }
     .github-stats { flex-direction: column; align-items: center; }
     .nav-links { gap: 15px; }
-}
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 100%;
-    gap: 40px;
-    padding: 0 20px;
-}
-
-header {
-    padding: 80px 60px;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

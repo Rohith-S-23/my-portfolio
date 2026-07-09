@@ -113,7 +113,7 @@ function App() {
           ))}
         </div>
 
-        <main className="mx-auto flex max-w-7xl flex-col px-4 pb-16 sm:px-6 lg:px-8">
+        <main className="mx-auto flex max-w-7xl flex-col px-4 pb-16 pt-24 sm:px-6 lg:px-8">
           <section data-index="0" className="scroll-mt-24" ref={(el) => (sectionRefs.current[0] = el)}><Hero /></section>
           <section data-index="1" className="scroll-mt-24" ref={(el) => (sectionRefs.current[1] = el)}><About /></section>
           <section data-index="2" className="scroll-mt-24" ref={(el) => (sectionRefs.current[2] = el)}><Skills /></section>

@@ -7,7 +7,7 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-5 z-50 mx-auto mt-6 w-[90%] max-w-7xl">
+    <header className="fixed left-1/2 top-5 z-[60] w-[90%] max-w-7xl -translate-x-1/2">
       <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-900/80 px-5 py-4 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:px-8">
         <a href="#home" className="flex items-center gap-3 text-2xl font-semibold text-white">
           <FaCode className="text-sky-400" />

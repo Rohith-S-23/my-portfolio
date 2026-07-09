@@ -140,7 +140,7 @@ Example:
 
 **Portfolio Website**
 
-👉 rohith23.vercel.app
+👉 https://rohith23.vercel.app
 
 ---
 
